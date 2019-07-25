@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="br.com.agendaeletronica.TestHomePage" time="0.437" errors="1" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="12.0.1+12"/>
+    <property name="sun.boot.library.path" value="D:\Program Files\Java\jdk-12.0.1\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Develop\git\Teste_wicket"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Develop\git\Teste_wicket"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="12.0.1+12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Breno\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\Breno\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf1659270649083777705.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="D:\Program Files\Java\jdk-12.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Program Files/Java/jdk-12.0.1/bin/server;D:/Program Files/Java/jdk-12.0.1/bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microchip\MPLAB C32 Suite\bin;C:\Develop\apache-maven-3.6.1\bin;D:\Program Files\Java\jdk-12.0.1\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Breno\AppData\Local\Microsoft\WindowsApps;C:\Users\Breno\AppData\Local\Programs\Microsoft VS Code\bin;;C:\Develop\eclipse;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="56.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Breno"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="12"/>
+    <property name="user.name" value="Breno"/>
+    <property name="java.class.path" value="C:\Develop\apache-maven-3.6.1\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="12"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.home" value="D:\Program Files\Java\jdk-12.0.1"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="12.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Develop\apache-maven-3.6.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2019-04-16"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="br.com.agendaeletronica.TestHomePage" name="homepageRendersSuccessfully" time="0.437">
+    <error message="The component(s) below failed to render. Possible reasons could be that:
+	1) you have added a component in code but forgot to reference it in the markup (thus the component will never be rendered),
+	2) if your components were added in a parent container then make sure the markup for the child container includes them in &lt;wicket:extend&gt;.
+
+1. [Component id = mensagemBoasVindas, page = br.com.agendaeletronica.Inicio, path = mensagemBoasVindas, type = org.apache.wicket.markup.html.basic.Label, isVisible = true, isVersioned = true]
+" type="org.apache.wicket.WicketRuntimeException">org.apache.wicket.WicketRuntimeException: The component(s) below failed to render. Possible reasons could be that:
+	1) you have added a component in code but forgot to reference it in the markup (thus the component will never be rendered),
+	2) if your components were added in a parent container then make sure the markup for the child container includes them in &lt;wicket:extend&gt;.
+
+1. [Component id = mensagemBoasVindas, page = br.com.agendaeletronica.Inicio, path = mensagemBoasVindas, type = org.apache.wicket.markup.html.basic.Label, isVisible = true, isVersioned = true]
+
+	at org.apache.wicket.Page.checkRendering(Page.java:663)
+	at org.apache.wicket.Page.onAfterRender(Page.java:806)
+	at org.apache.wicket.markup.html.WebPage.onAfterRender(WebPage.java:209)
+	at org.apache.wicket.Component.afterRender(Component.java:899)
+	at org.apache.wicket.Component.render(Component.java:2239)
+	at org.apache.wicket.Page.renderPage(Page.java:998)
+	at org.apache.wicket.request.handler.render.WebPageRenderer.renderPage(WebPageRenderer.java:124)
+	at org.apache.wicket.request.handler.render.WebPageRenderer.respond(WebPageRenderer.java:236)
+	at org.apache.wicket.util.tester.BaseWicketTester$LastPageRecordingPageRendererProvider$1.respond(BaseWicketTester.java:2833)
+	at org.apache.wicket.core.request.handler.RenderPageRequestHandler.respond(RenderPageRequestHandler.java:202)
+	at org.apache.wicket.request.cycle.RequestCycle$HandlerExecutor.respond(RequestCycle.java:914)
+	at org.apache.wicket.request.RequestHandlerExecutor.execute(RequestHandlerExecutor.java:65)
+	at org.apache.wicket.request.cycle.RequestCycle.execute(RequestCycle.java:282)
+	at org.apache.wicket.request.cycle.RequestCycle.processRequest(RequestCycle.java:253)
+	at org.apache.wicket.request.cycle.RequestCycle.processRequestAndDetach(RequestCycle.java:221)
+	at org.apache.wicket.util.tester.BaseWicketTester.processRequest(BaseWicketTester.java:713)
+	at org.apache.wicket.util.tester.BaseWicketTester.processRequest(BaseWicketTester.java:652)
+	at org.apache.wicket.util.tester.BaseWicketTester.processRequest(BaseWicketTester.java:624)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:1278)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:1251)
+	at br.com.agendaeletronica.TestHomePage.homepageRendersSuccessfully(TestHomePage.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+    <system-err>[main] INFO org.apache.wicket.Application - [WicketTesterApplication-5890a0e7-a6b5-43c8-8fc0-6b5c0d59c8e6] init: Wicket core library initializer
+[main] WARN RequestCycleExtra - ********************************
+[main] WARN RequestCycleExtra - Handling the following exception
+org.apache.wicket.WicketRuntimeException: The component(s) below failed to render. Possible reasons could be that:
+	1) you have added a component in code but forgot to reference it in the markup (thus the component will never be rendered),
+	2) if your components were added in a parent container then make sure the markup for the child container includes them in &lt;wicket:extend&gt;.
+
+1. [Component id = mensagemBoasVindas, page = br.com.agendaeletronica.Inicio, path = mensagemBoasVindas, type = org.apache.wicket.markup.html.basic.Label, isVisible = true, isVersioned = true]
+
+	at org.apache.wicket.Page.checkRendering(Page.java:663)
+	at org.apache.wicket.Page.onAfterRender(Page.java:806)
+	at org.apache.wicket.markup.html.WebPage.onAfterRender(WebPage.java:209)
+	at org.apache.wicket.Component.afterRender(Component.java:899)
+	at org.apache.wicket.Component.render(Component.java:2239)
+	at org.apache.wicket.Page.renderPage(Page.java:998)
+	at org.apache.wicket.request.handler.render.WebPageRenderer.renderPage(WebPageRenderer.java:124)
+	at org.apache.wicket.request.handler.render.WebPageRenderer.respond(WebPageRenderer.java:236)
+	at org.apache.wicket.util.tester.BaseWicketTester$LastPageRecordingPageRendererProvider$1.respond(BaseWicketTester.java:2833)
+	at org.apache.wicket.core.request.handler.RenderPageRequestHandler.respond(RenderPageRequestHandler.java:202)
+	at org.apache.wicket.request.cycle.RequestCycle$HandlerExecutor.respond(RequestCycle.java:914)
+	at org.apache.wicket.request.RequestHandlerExecutor.execute(RequestHandlerExecutor.java:65)
+	at org.apache.wicket.request.cycle.RequestCycle.execute(RequestCycle.java:282)
+	at org.apache.wicket.request.cycle.RequestCycle.processRequest(RequestCycle.java:253)
+	at org.apache.wicket.request.cycle.RequestCycle.processRequestAndDetach(RequestCycle.java:221)
+	at org.apache.wicket.util.tester.BaseWicketTester.processRequest(BaseWicketTester.java:713)
+	at org.apache.wicket.util.tester.BaseWicketTester.processRequest(BaseWicketTester.java:652)
+	at org.apache.wicket.util.tester.BaseWicketTester.processRequest(BaseWicketTester.java:624)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:1278)
+	at org.apache.wicket.util.tester.BaseWicketTester.startPage(BaseWicketTester.java:1251)
+	at br.com.agendaeletronica.TestHomePage.homepageRendersSuccessfully(TestHomePage.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[main] WARN RequestCycleExtra - ********************************
+</system-err>
+  </testcase>
+</testsuite>
