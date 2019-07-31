@@ -4,8 +4,8 @@ import org.apache.wicket.util.tester.WicketTester;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.agendaeletronica.Inicio;
-import br.com.agendaeletronica.WicketApplication;
+import br.com.agendaeletronica.ui.Inicio;
+import br.com.agendaeletronica.ui.WicketApplication;
 
 /**
  * Simple test using the WicketTester

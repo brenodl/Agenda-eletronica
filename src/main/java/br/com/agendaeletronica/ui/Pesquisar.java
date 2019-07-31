@@ -1,4 +1,4 @@
-package br.com.agendaeletronica;
+package br.com.agendaeletronica.ui;
 
 public class Pesquisar extends BasePage {
 

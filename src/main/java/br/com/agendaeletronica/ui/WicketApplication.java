@@ -1,4 +1,4 @@
-package br.com.agendaeletronica;
+package br.com.agendaeletronica.ui;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
