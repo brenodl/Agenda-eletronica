@@ -2,6 +2,8 @@ package br.com.agendaeletronica.model;
 
 import java.io.Serializable;
 
+import br.com.agendaeletronica.enums.EstadoCivilEnum;
+
 public class Contato implements Serializable {
 
 	private static final long serialVersionUID = -7904779829735820081L;
@@ -10,6 +12,7 @@ public class Contato implements Serializable {
 	private String nome;
 	private String email;
 	private String telefone;
+	private EstadoCivilEnum estadoCivil;
 
 	public Long getId() {
 		return id;
@@ -42,11 +45,18 @@ public class Contato implements Serializable {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	@Override
-	public String toString() {
-		return ("Contato: nome: " + nome + "email: " + email + "telefone: " + telefone + "");
-		
-		
+	
+	public EstadoCivilEnum getEstadoCivil() {
+		return estadoCivil;
 	}
+	
+	public void setEstadoCivil(EstadoCivilEnum estadoCivil) {
+		this.estadoCivil = estadoCivil;
+	}
+	
+	@Override
+    public String toString() {
+        return "{Contato: nome='" + nome + "' email='" + email + "' telefone='" + telefone + "' estadoCivil='" + estadoCivil.name() + "'}";
+    }
 
 }

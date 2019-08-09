@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import br.com.agendaeletronica.ui.Inicio;
+import br.com.agendaeletronica.ui.Login;
 import br.com.agendaeletronica.ui.WicketApplication;
 
 /**
@@ -24,9 +25,9 @@ public class TestHomePage
 	public void homepageRendersSuccessfully()
 	{
 		//start and render the test page
-		tester.startPage(Inicio.class);
+		tester.startPage(Login.class);
 
 		//assert rendered page class
-		tester.assertRenderedPage(Inicio.class);
+		tester.assertRenderedPage(Login.class);
 	}
 }
