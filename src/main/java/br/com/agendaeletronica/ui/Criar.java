@@ -49,37 +49,14 @@ public class Criar extends BasePage {
 		TextField<String> inputEmail = new TextField<>("email");
 		TextField<String> inputTelefone = new TextField<>("telefone");
 		DropDownChoice<EstadoCivilEnum> comboEstadoCivil = new DropDownChoice<>("estadoCivil",
-				Arrays.asList(EstadoCivilEnum.values()), new IChoiceRenderer<EstadoCivilEnum>() {
-
-					private static final long serialVersionUID = -4412218034151755085L;
-
-					@Override
-					public Object getDisplayValue(EstadoCivilEnum object) {
-
-						return object.getLabel();
-					}
-
-					@Override
-					public String getIdValue(EstadoCivilEnum object, int index) {
-						// TODO Auto-generated method stub
-						return object.name();
-					}
-
-					@Override
-					public EstadoCivilEnum getObject(String id,
-							IModel<? extends List<? extends EstadoCivilEnum>> choices) {
-						
-						return null;
-					}
-
-				});
+				Arrays.asList(EstadoCivilEnum.values()));
 		form.add(inputNome, inputEmail, inputTelefone, comboEstadoCivil);
 		
 		   inputNome.setLabel(Model.of("Nome do contato")).setRequired(true).add(StringValidator.maximumLength(10));
 	        inputEmail.setLabel(Model.of("E-mail do contato")).add(EmailAddressValidator.getInstance());
 	        
 	        add(new FeedbackPanel("feedbackMessage", new ErrorLevelFeedbackMessageFilter(FeedbackMessage.ERROR)));
-	
+	        
 }
 
 	protected void salvar(Contato contatoSubmetido) {

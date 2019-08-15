@@ -1,39 +1,111 @@
 <!DOCTYPE html>
 <html xmlns:wicket="http://wicket.apache.org" lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<title>Agenda Eletrônica</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	</head>
+<head>
+  <title>Agenda Eletrônica</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="icon" type="image/png" href="images/icons/agenda.png"/>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+*  {
+    margin:0;
+    padding:0;
+}
+
+html, body {height:90%;}
+
+.geral {
+    min-height:90%;
+    position:relative;
+    width:800px;
+}
+
+    /* Set black background color, white text and some padding */
+    footer {
+    position:absolute;
+      background-color: #555;
+      color: white;
+      padding: 7px;
+      width:100%;
+      bottom:0;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
 	<body>
-	<h1>Agenda eletrônica</h1>
-	
-	
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-	<wicket:link>
-	<ul class="navbar-nav mr-auto"> 
- <li class="nav-item active">
- 		
-        <a class="nav-link" href="Inicio.html">Início<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="Criar.html">Criar Contatos</a>
-      </li>
-        <li class="nav-item">
-        <a class="nav-link" href="Pesquisar.html">Pesquisar Contatos</a>   
-      </li>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Agenda</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+     <wicket:link>
+      <ul class="nav navbar-nav">
+        <li class="nav-link"><a href="Inicio.html">Inicio</a></li>
+        <li class="nav-link"><a href="Criar.html">Criar</a></li>
+        <li class="nav-link"><a href="Pesquisar.html">Pesquisar</a></li>
       </ul>
       </wicket:link>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a wicket:id="sair" href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-
-	<div id="blocoDireito">
+	<div class="container geral">
 	<wicket:child/>
 	</div>
 	
-	<footer>
-		<hr />
-		Agenda eletrônica&nbsp;&nbsp;&bull;&nbsp;&nbsp;<a href="#" wicket:id="sair">Sair</a>
-	</footer>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+  <div class="text-left py-3">Agenda eletrônica</div>
+
+</footer>
+<!-- Footer -->
+
+
+	<!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
 	
 	</body>
 </html>

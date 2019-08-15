@@ -13,7 +13,7 @@ public class BasePage extends WebPage {
 			setResponsePage(Login.class);
 			return;
 		}
-
+		
 		add(new Link<Void>("sair") {
 
 			private static final long serialVersionUID = 6662147488195682723L;

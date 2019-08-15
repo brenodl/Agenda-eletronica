@@ -60,7 +60,8 @@ public class Pesquisar extends BasePage {
 		AjaxButton botaoPesquisar = new AjaxButton("botaoPesquisar", formularioPesquisa) {
 			private static final long serialVersionUID = -5481841024415399184L;
 			
-			protected void onSubmit(AjaxRequestTarget target, Form<?> form) {
+			@Override
+			protected void onSubmit(AjaxRequestTarget target) {
 				String nomeAPesquisar = pesquisaNome.getConvertedInput();
                 List<Contato> contatos = dao.listarPorNome(nomeAPesquisar);
                 listaResultados.setDefaultModelObject(contatos);
