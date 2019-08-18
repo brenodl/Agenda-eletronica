@@ -10,6 +10,7 @@ public class Contato implements Serializable {
 
 	private Long id;
 	private String nome;
+	private String sobrenome;
 	private String email;
 	private String telefone;
 	private EstadoCivilEnum estadoCivil;

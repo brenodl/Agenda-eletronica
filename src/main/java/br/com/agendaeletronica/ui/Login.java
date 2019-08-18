@@ -1,6 +1,5 @@
 package br.com.agendaeletronica.ui;
 
-import javax.servlet.http.HttpServletRequest;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.Form;
@@ -28,8 +27,6 @@ public class Login extends WebPage {
 				String senha = campoPassword.getModelObject();
 				if (nomeUsuario.toUpperCase().equals("BRENO") && senha.equals("12345")) {
 					getSession().setAttribute("userName", nomeUsuario);
-					  HttpServletRequest httpServletRequest = (HttpServletRequest)getRequest().getContainerRequest();
-					    boolean isValidRecaptcha = ReCaptchaV2.getInstance().verify(httpServletRequest);
 					setResponsePage(Inicio.class);
 				} 
 				campoNomeUsuario.clearInput();
