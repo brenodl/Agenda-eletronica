@@ -42,8 +42,11 @@ public class Pesquisar extends BasePage {
 			@Override
 			protected void populateItem(final ListItem<Contato> listItem) {
 				listItem.add(new Label("nome"));
+				listItem.add(new Label("sobrenome"));
 				listItem.add(new Label("email"));
 				listItem.add(new Label("telefone"));
+				listItem.add(new Label("endereco"));
+				listItem.add(new Label("cep"));
 				listItem.add(new Label("estadoCivil"));
 				listItem.add(new Link<Void>("linkEditar") {
                     private static final long serialVersionUID = -9102939954036201747L;

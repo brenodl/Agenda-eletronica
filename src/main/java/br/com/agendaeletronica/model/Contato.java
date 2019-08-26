@@ -12,6 +12,32 @@ public class Contato implements Serializable {
 	private String nome;
 	private String sobrenome;
 	private String email;
+	private String cep;
+	private String endereco;
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
+
+	public String getCep() {
+		return cep;
+	}
+
+	public void setCep(String cep) {
+		this.cep = cep;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
 	private String telefone;
 	private EstadoCivilEnum estadoCivil;
 

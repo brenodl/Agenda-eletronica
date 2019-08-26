@@ -46,11 +46,15 @@ public class Criar extends BasePage {
 		add(form);
 
 		TextField<String> inputNome = new TextField<>("nome");
+		TextField<String> inputSobrenome = new TextField<>("sobrenome");
 		TextField<String> inputEmail = new TextField<>("email");
 		TextField<String> inputTelefone = new TextField<>("telefone");
+		TextField<String> inputCep = new TextField<>("cep");
+		TextField<String> inputEndereco = new TextField<>("endereco");
+		
 		DropDownChoice<EstadoCivilEnum> comboEstadoCivil = new DropDownChoice<>("estadoCivil",
 				Arrays.asList(EstadoCivilEnum.values()));
-		form.add(inputNome, inputEmail, inputTelefone, comboEstadoCivil);
+		form.add(inputNome, inputSobrenome, inputEmail, inputTelefone, inputCep, inputEndereco, comboEstadoCivil);
 		
 		   inputNome.setLabel(Model.of("Nome do contato")).setRequired(true).add(StringValidator.maximumLength(10));
 	        inputEmail.setLabel(Model.of("E-mail do contato")).add(EmailAddressValidator.getInstance());

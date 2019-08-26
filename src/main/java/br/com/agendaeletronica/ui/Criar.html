@@ -3,79 +3,44 @@
 	<h2 wicket:id="titulo" class="title">Registration Form</h2>
 
 	<form wicket:id="formularioContato">
-			<div class="form-group col-md-6">
-				<label for="inputNome">Nome</label> <input wicket:id="nome"
-					type="text" class="form-control" id="inputNome"
-					placeholder="Nome">
-			</div>
-			<div class="form-group col-md-6">
-				<label for="inputSobrenome">Sobrenome</label> <input
-					type="text" class="form-control" id="inputSobrenome"
-					placeholder="Sobrenome">
-			</div>
-		<div class="form-group">
-				<label for="inputEmail4">E-mail</label> <input
-					wicket:id="email" type="text" class="form-control"
-					id="email" placeholder="E-mail">
-			</div>
-			
-			<div class="form-group">
-			<label for="inputAddress">Telefone</label> <input wicket:id = "telefone"
-				type="text" class="form-control" id="inputTelefone"
-				placeholder="1234 Main St">
-			</div>
-		<div class="form-group">
-			<label for="inputAddress">Endereço</label> <input
-				type="text" class="form-control" id="inputAddress"
-				placeholder="1234 Main St">
+		<div class="form-group col-md-6">
+			<label for="inputNome">Nome</label> <input wicket:id="nome" type="text" class="form-control" id="inputNome"
+				placeholder="Nome">
+		</div>
+		<div class="form-group col-md-6">
+			<label for="inputSobrenome">Sobrenome</label> <input wicket:id="sobrenome" type="text" class="form-control" id="inputSobrenome"
+				placeholder="Sobrenome">
 		</div>
 		<div class="form-group">
-			<label for="inputAddress2">Address 2</label> <input type="text"
-				class="form-control" id="inputAddress2"
-				placeholder="Apartment, studio, or floor">
+			<label for="inputEmail4">E-mail</label> <input wicket:id="email" type="text" class="form-control" id="email"
+				placeholder="E-mail">
+		</div>
+
+		<div class="form-group">
+			<label for="inputAddress">Telefone</label> <input wicket:id="telefone" type="text" class="form-control"
+				id="inputTelefone" placeholder="1234 Main St">
+		</div>
+		<div class="form-group">
+			<label for="inputEstadoCivil">Estado Civil</label> <select wicket:id="estadoCivil" id="inputEstadoCivil"
+				class="form-control">
+				<option selected>Escolha...</option>
+				<option>...</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="inputAddress">Endereço</label> <input wicket:id="endereco" type="text" class="form-control" id="inputAddress"
+				placeholder="1234 Main St">
 		</div>
 		<div class="form-row">
 			<div class="form-group col-md-6">
-				<label for="inputCity">City</label> <input type="text"
-					class="form-control" id="inputCity">
+				<label for="inputCity">Cidade</label> <input type="text" class="form-control" id="inputCity">
 			</div>
-			<div class="form-group col-md-4">
-				<label for="inputEstadoCivil">State</label> <select
-					wicket:id="estadoCivil" id="inputEstadoCivil" class="form-control">
-					<option selected>Choose...</option>
-					<option>...</option>
-				</select>
-			</div>
+
 			<div class="form-group col-md-2">
-				<label for="inputZip">Zip</label> <input type="text"
-					class="form-control" id="inputZip">
+				<label for="inputZip">Cep</label> <input wicket:id="cep" type="text" class="form-control" id="inputZip">
 			</div>
 		</div>
-		<div class="form-group">
-			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="gridCheck">
-				<label class="form-check-label" for="gridCheck"> Check me
-					out </label>
-			</div>
-		</div>
-		<button type="submit" class="btn btn-primary">Sign in</button>
+		<button type="submit" class="btn btn-primary">Enviar</button>
 	</form>
 
 </wicket:extend>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

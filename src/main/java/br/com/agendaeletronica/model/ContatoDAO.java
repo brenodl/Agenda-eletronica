@@ -11,9 +11,9 @@ import br.com.agendaeletronica.enums.EstadoCivilEnum;
 
 public class ContatoDAO {
 
-	private static final String INSERT_SQL = "INSERT INTO Contato (NOME, EMAIL, TELEFONE, ESTADO_CIVIL) VALUES (?, ?, ?, ?)";
-	private final static String UPDATE_SQL = "UPDATE Contato SET NOME=?, EMAIL=?, TELEFONE=?, ESTADO_CIVIL=? WHERE ID_CONTATO=?";
-	private static final String LIST_SQL = "SELECT ID_CONTATO, NOME, EMAIL, TELEFONE, ESTADO_CIVIL FROM Contato WHERE NOME LIKE ?";
+	private static final String INSERT_SQL = "INSERT INTO Contato (NOME, SOBRENOME, EMAIL, TELEFONE, ENDERECO, CEP, ESTADO_CIVIL) VALUES (?, ?, ?, ?, ?, ?, ?)";
+	private final static String UPDATE_SQL = "UPDATE Contato SET NOME=?, SOBRENOME=?, EMAIL=?, TELEFONE=?, ENDERECO=?, CEP=?, ESTADO_CIVIL=? WHERE ID_CONTATO=?";
+	private static final String LIST_SQL = "SELECT ID_CONTATO, NOME, SOBRENOME, EMAIL, TELEFONE, ENDERECO, CEP, ESTADO_CIVIL FROM Contato WHERE NOME LIKE ?";
 
 	private Connection conexao;
 
@@ -26,9 +26,12 @@ public class ContatoDAO {
 		try {
 			ps = conexao.prepareStatement(INSERT_SQL);
 			ps.setString(1, contato.getNome());
-			ps.setString(2, contato.getEmail());
-			ps.setString(3, contato.getTelefone());
-			ps.setString(4, contato.getEstadoCivil().name());
+			ps.setString(2, contato.getSobrenome());
+			ps.setString(3, contato.getEmail());
+			ps.setString(4, contato.getTelefone());
+			ps.setString(5, contato.getEndereco());
+			ps.setString(6, contato.getCep());
+			ps.setString(7, contato.getEstadoCivil().name());
 			ps.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -48,10 +51,13 @@ public class ContatoDAO {
 		try {
 			p = conexao.prepareStatement(UPDATE_SQL);
 			p.setString(1, contato.getNome());
-			p.setString(2, contato.getEmail());
-			p.setString(3, contato.getTelefone());
-			p.setString(4, contato.getEstadoCivil().name());
-			p.setLong(5, contato.getId());
+			p.setString(2, contato.getSobrenome());
+			p.setString(3, contato.getEmail());
+			p.setString(4, contato.getTelefone());
+			p.setString(5, contato.getEndereco());
+			p.setString(6, contato.getCep());
+			p.setString(7, contato.getEstadoCivil().name());
+			p.setLong(8, contato.getId());
 			p.executeUpdate();
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -72,15 +78,19 @@ public class ContatoDAO {
 		ResultSet rs = null;
 		try {
 			ps = conexao.prepareStatement(LIST_SQL);
-			ps.setString(1, nome + "%");
+			ps.setString(1, "%" + nome + "%");
 			rs = ps.executeQuery();
 			while (rs.next()) {
 				Contato contato = new Contato();
+				
 				contato.setId(rs.getLong(1));
 				contato.setNome(rs.getString(2));
-				contato.setEmail(rs.getString(3));
-				contato.setTelefone(rs.getString(4));
-				contato.setEstadoCivil(EstadoCivilEnum.valueOf(rs.getString(5)));
+				contato.setSobrenome(rs.getString(3));
+				contato.setEmail(rs.getString(4));
+				contato.setTelefone(rs.getString(5));
+				contato.setEndereco(rs.getString(6));
+				contato.setCep(rs.getString(7));
+				contato.setEstadoCivil(EstadoCivilEnum.valueOf(rs.getString(8)));
 				contatos.add(contato);
 			}
 			return contatos;

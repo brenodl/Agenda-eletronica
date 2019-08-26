@@ -1,0 +1,1 @@
+web: java target/Agenda-eletronica-1.0-SNAPSHOT.war

@@ -195,6 +195,7 @@
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
 				</configuration>
+				
 			</plugin>
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
